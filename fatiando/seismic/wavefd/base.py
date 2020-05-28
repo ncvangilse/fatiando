@@ -6,7 +6,7 @@ from tempfile import NamedTemporaryFile
 import time
 import sys
 import os
-import cPickle as pickle
+import pickle
 
 import numpy as np
 from IPython.display import Image, HTML, display, display_png

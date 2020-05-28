@@ -1,6 +1,6 @@
 from __future__ import division, print_function
 from future.builtins import super, object, range
-import cPickle as pickle
+import pickle
 
 import numpy as np
 from numpy import sqrt
@@ -232,7 +232,7 @@ class FDElasticPSV(WaveFD2D):
             dt = panels.attrs['dt']
             padding = panels.attrs['padding']
             taper = panels.attrs['taper']
-            sim = ElasticPSV(pvel[:], svel[:], dens[:], (dx, dz), dt=dt,
+            sim = FDElasticPSV(pvel[:], svel[:], dens[:], (dx, dz), dt=dt,
                              padding=padding, taper=taper, cachefile=fname)
             sim.simsize = panels.attrs['simsize']
             sim.it = panels.attrs['iteration']

@@ -1,6 +1,7 @@
 from __future__ import division, print_function
 from future.builtins import super, object, range
-import cPickle as pickle
+
+import pickle
 
 import numpy as np
 from numpy import sqrt
